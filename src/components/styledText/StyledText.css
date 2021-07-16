@@ -1,0 +1,11 @@
+.tag1 {
+    /*color: #fb5353;*/
+    text-shadow: 2px 4px 3px rgb(127, 127, 127);
+    font-size: 40px;
+}
+
+.tag2 {
+    color: darkkhaki;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff;
+}
