@@ -5,7 +5,7 @@ class ConditionalRender extends Component {
     constructor() {
         super();
         this.state = {
-            condition: true
+            condition: false
         }
     }
 

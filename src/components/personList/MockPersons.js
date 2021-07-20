@@ -6,7 +6,7 @@ const persons = [
     },
     {
         id:1,
-        name: "Rin",
+        name: "Saber",
         anime: "Fate/Stay Night"
     },
     {
