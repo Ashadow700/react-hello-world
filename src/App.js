@@ -18,13 +18,33 @@ function App() {
     const callAlertToo = (pingValue) => {
         console.log(pingValue)
         console.log("process.env.NODE_ENV", process.env.NODE_ENV)
+
+        let url = "http://localhost:5000/tea/tea"
+        fetch(url)
+
+        // testHttp()
     }
     //
     function callAlert() {
         console.log("Ping from App! =)")
     }
 
-  return (
+
+    function testHttp() {
+        // let url = "http://localhost:5000" + "/game/updateActivePieceGoal/" + gameId
+
+        let url = "http://localhost:5000/tea/tea"
+        get(url)
+            .then(response => console.log(response))
+    }
+
+    function get(url) {
+        return fetch(url)
+    }
+
+
+
+    return (
       <div className="App">
           <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
