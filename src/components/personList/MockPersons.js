@@ -1,8 +1,8 @@
 const persons = [
     {
         id:0,
-        name: "Emilya",
-        anime: "Re:Zero"
+        name: "Blake",
+        anime: "Rwby"
     },
     {
         id:1,
