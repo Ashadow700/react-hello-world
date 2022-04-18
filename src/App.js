@@ -12,31 +12,43 @@ import Square from "./components/Square/Square";
 import React from "react";
 import MySocket from "./components/websocket/MySocket"
 
+// const commandLineArgs = require('command-line-args')
 
 function App() {
+
+
+
     //
     const callAlertToo = (pingValue) => {
         console.log(pingValue)
         console.log("process.env.NODE_ENV", process.env.NODE_ENV)
+        //
+        console.log("process = ", process);
 
-        let url = "http://localhost:5000/tea/tea"
-        fetch(url)
 
-        // testHttp()
+        // const args = commandLineArgs()
+
+        // console.log("args = ", args)
+
+        let urlFail = "http://localhost:5000/environmensible"
+        let urlWork = "http://localhost:5000/environmentAccessible"
+
+
+
     }
-    //
+
     function callAlert() {
         console.log("Ping from App! =)")
     }
 
 
-    function testHttp() {
-        // let url = "http://localhost:5000" + "/game/updateActivePieceGoal/" + gameId
-
-        let url = "http://localhost:5000/tea/tea"
-        get(url)
-            .then(response => console.log(response))
-    }
+    // function testHttp() {
+    //     // let url = "http://localhost:5000" + "/game/updateActivePieceGoal/" + gameId
+    //
+    //     let url = "http://localhost:5000/tea/tea"
+    //     get(url)
+    //         .then(response => console.log(response.status))
+    // }
 
     function get(url) {
         return fetch(url)
