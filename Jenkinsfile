@@ -1,15 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'npm install'
-                sh 'echo added in git'
-            }
+    agent {
+        docker {
+            image 'node:lts-bullseye-slim' 
+            args '-p 3000:3000' 
         }
-        stage('deploy') {
+    }
+    stages {
+        stage('Build') { 
             steps {
-                sh 'export JENKINS_NODE_COOKIE=dontKillMe && npm run serve >> ./output.logs &'
+                sh 'echo new buildpipe =D'
+                sh 'npm install' 
             }
         }
     }
