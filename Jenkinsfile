@@ -9,6 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo new buildpipe =D'
+                sh 'docker ps'
                 sh 'npm install' 
             }
         }
